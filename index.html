@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Play pong against a wall with web browser windows"
+        />
+
+        <title>Pong with browser windows</title>
+
+        <link href="/favicon.svg" rel="icon" />
+        <link href="/favicon.png" rel="icon" />
+        <link href="/favicon.ico" rel="icon" />
+        <link rel="stylesheet" href="style.css" />
+
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <h1>Pong with browser windows</h1>
+
+        <noscript>This page requires JavaScript.</noscript>
+        <p>
+            This is a tech demo. Bugs are expected. You can't use this on a
+            phone. You will probably need to allow popup windows and disable
+            privacy extensions (like
+            <a href="https://brave.com/" target="_blank">Brave</a>'s "shields").
+        </p>
+        <p>Press up and down arrow keys to move the paddle.</p>
+        <p>Hits in a row: <span id="score">0</span>.</p>
+        <p>
+            <button onclick="init()" autofocus>Start</button>
+            Click the button to start.
+        </p>
+
+        <hr />
+        <p>
+            <i>
+                This page last changed Dec 11 2023; created Dec 11 2023;
+                <a
+                    target="_blank"
+                    href="https://github.com/jkoop/pong-with-windows"
+                    >source on GitHub</a
+                >;
+            </i>
+        </p>
+    </body>
+</html>

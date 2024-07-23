@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <script>
+            window.addEventListener("DOMLoaded", () => {
+                document.body.innerText = location.search.substr(1);
+                document.title = location.search.substr(1);
+            });
+
+            window.onkeyup = function (e) {
+                window.opener.parent.postMessage([e.keyCode, false]);
+            };
+            window.onkeydown = function (e) {
+                window.opener.parent.postMessage([e.keyCode, true]);
+            };
+        </script>
+    </body>
+</html>
